@@ -139,28 +139,6 @@ nav {
     transform: translateX(0%);
 }
 
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes navLinkFadeBack {
-    from {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-}
-
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -222,6 +200,33 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 25vh;
+    left: 50%;
+    margin-left: -21px;
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: block;
+    border-color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.arrow1 {
+    margin-bottom: 20px;
+    animation: arrowAnimation 3s alternate infinite ease-in-out;
+}
+
+.arrow2 {
+    animation: arrowAnimation 3s alternate infinite ease-in-out 0.2s;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .under-line {
@@ -287,4 +292,41 @@ h3.under-title {
 
 .cave-boat-image {
     
+}
+
+
+/*animations*/
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navLinkFadeBack {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+@keyframes arrowAnimation {
+    0% {
+        bottom: 25vh;
+    }
+    50% {
+        bottom: 27vh;
+    }
+    100% {
+        bottom: 25vh;
+    }
 }

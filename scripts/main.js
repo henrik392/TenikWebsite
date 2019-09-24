@@ -1,3 +1,14 @@
+
+$('#arrowID').scroll(function (event) {
+    alert('Stop');
+    if ($(window).scrollTop() > 100) {
+        $('#arrowID').hide();
+    }
+    else {
+        $('#arrowID').hide();
+    }
+});
+
 /* Shapes */
 var svgContainer = document.getElementById('bm');
 var animItem = bodymovin.loadAnimation({
