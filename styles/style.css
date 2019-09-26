@@ -194,11 +194,6 @@ nav {
     /* Set a specific height */
     min-height: 1000px; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -290,8 +285,24 @@ h3.under-title {
     margin-bottom: 50px;
 }
 
+.grid-container {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.75);
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 50vw;
+}
+
+.garbage-disk-image {
+    background-image: url("../images/GarbageDiskIcon.gif");
+}
+
 .cave-boat-image {
-    
+    background-image: url("../images/CaveBoatkIcon.gif");
 }
 
 
