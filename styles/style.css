@@ -19,10 +19,6 @@ body {
     transform-style: preserve-3d;
 }
 
-.test-shadow {
-    padding-bottom: 0px;
-}
-
 nav {
     display: flex;
     justify-content: space-around;

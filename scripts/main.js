@@ -1,4 +1,3 @@
-
 $('#arrowID').scroll(function (event) {
     alert('Stop');
     if ($(window).scrollTop() > 100) {

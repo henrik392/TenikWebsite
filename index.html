@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
+    <script>
+(function(a){if(a)a.events={DOMNodeInserted:function(b){var b=b.target,c=b.nodeName;b.nodeType==1&&(/link/i.test(c)?a.link(b):/style/i.test(c)?a.styleElement(b):b.hasAttribute("style")&&a.styleAttribute(b))},DOMAttrModified:function(b){b.attrName==="style"&&(document.removeEventListener("DOMAttrModified",a.events.DOMAttrModified,false),a.styleAttribute(b.target),document.addEventListener("DOMAttrModified",a.events.DOMAttrModified,false))}},document.addEventListener("DOMContentLoaded",function(){document.addEventListener("DOMNodeInserted",
+a.events.DOMNodeInserted,false);document.addEventListener("DOMAttrModified",a.events.DOMAttrModified,false)},false)})(window.StyleFix);
+(function(a){if(a&&window.CSSStyleDeclaration)for(var b=0;b<a.properties.length;b++){var c=StyleFix.camelCase(a.properties[b]),d=a.prefixProperty(c),e=CSSStyleDeclaration.prototype,f=function(a){return function(){return this[a]}}(d),d=function(a){return function(b){this[a]=b}}(d);Object.defineProperty?Object.defineProperty(e,c,{get:f,set:d,enumerable:true,configurable:true}):e.__defineGetter__&&(e.__defineGetter__(c,f),e.__defineSetter__(c,d))}})(window.PrefixFree);
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -11,36 +16,33 @@
 </head>
 
 <body>
-    
     <header>
-        <div class="test-shadow">
-            <nav>
-                <div class="logo">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 912.09 342.6" class="tenik-logo"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text/><polygon class="cls-1" points="377.29 222.5 318.46 222.5 318.46 188.46 370.73 188.46 370.73 160.49 318.46 160.49 318.46 128.4 377.29 128.4 377.29 98.91 281.06 98.91 281.06 252.2 377.29 252.2 377.29 222.5"/><polygon class="cls-1" points="435.89 158.1 498.44 252.2 535.84 252.2 535.84 98.91 498.44 98.91 498.44 193.88 435.89 98.91 398.5 98.91 398.5 252.2 435.89 252.2 435.89 158.1"/><polygon class="cls-1" points="662.24 183.47 714.73 252.2 760 252.2 697.67 173.93 760 98.91 715.16 98.91 662.24 166.34 662.24 98.91 624.84 98.91 624.84 252.2 662.24 252.2 662.24 183.47"/><path class="cls-1" d="M912.09,132.12a66.16,66.16,0,1,0-85,63.42V305H223.33V128.4h42V98.91H144.16V128.4h41.55V342.6h679v-147A66.29,66.29,0,0,0,912.09,132.12Zm-66.16,34.5a34.5,34.5,0,1,1,34.49-34.5A34.54,34.54,0,0,1,845.93,166.62Z"/><path class="cls-1" d="M47.35,0V149A66.16,66.16,0,1,0,85,149V37.62H561.42V216.45h.22V252.2H599V0Zm53.31,212.45A34.5,34.5,0,1,1,66.16,178,34.53,34.53,0,0,1,100.66,212.45Z"/></g></g></svg>
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#games">Games</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 912.09 342.6" class="tenik-logo"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text/><polygon class="cls-1" points="377.29 222.5 318.46 222.5 318.46 188.46 370.73 188.46 370.73 160.49 318.46 160.49 318.46 128.4 377.29 128.4 377.29 98.91 281.06 98.91 281.06 252.2 377.29 252.2 377.29 222.5"/><polygon class="cls-1" points="435.89 158.1 498.44 252.2 535.84 252.2 535.84 98.91 498.44 98.91 498.44 193.88 435.89 98.91 398.5 98.91 398.5 252.2 435.89 252.2 435.89 158.1"/><polygon class="cls-1" points="662.24 183.47 714.73 252.2 760 252.2 697.67 173.93 760 98.91 715.16 98.91 662.24 166.34 662.24 98.91 624.84 98.91 624.84 252.2 662.24 252.2 662.24 183.47"/><path class="cls-1" d="M912.09,132.12a66.16,66.16,0,1,0-85,63.42V305H223.33V128.4h42V98.91H144.16V128.4h41.55V342.6h679v-147A66.29,66.29,0,0,0,912.09,132.12Zm-66.16,34.5a34.5,34.5,0,1,1,34.49-34.5A34.54,34.54,0,0,1,845.93,166.62Z"/><path class="cls-1" d="M47.35,0V149A66.16,66.16,0,1,0,85,149V37.62H561.42V216.45h.22V252.2H599V0Zm53.31,212.45A34.5,34.5,0,1,1,66.16,178,34.53,34.53,0,0,1,100.66,212.45Z"/></g></g></svg>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#games">Games</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="parallax-div">
@@ -85,11 +87,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    <script>$('#arrowID').scroll(function() {
-    console.log("scrollink!");
- });</script>
-    
     <script src="scripts/main.js"> </script> 
 </body>
 
