@@ -72,8 +72,10 @@ const navSlide = () => {
     });
 
     nav.addEventListener("click", function(e) {
-        ToggleMenu();
-    })
+        if (window.matchMedia('(max-width: 767px)').matches && menuOpen) {
+            ToggleMenu();
+        }
+    });
 }
 
 navSlide();
