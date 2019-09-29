@@ -268,7 +268,7 @@ h3.under-title {
     font-family: 'Poppins', sans-serif;
 }
 
-.inspiring-text {
+.about-text {
     text-align: center;
     font-size: 36px;
     color: #fff;
@@ -430,7 +430,7 @@ h3.under-title {
         font-size: 100px;
     }
     .under-title {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     h3.under-title {
@@ -439,6 +439,14 @@ h3.under-title {
 
     .grid-container {
         margin-top: 100px
+    }
+
+    .about-text {
+        margin: 20px;
+    }
+
+    .contact-text {
+        font-size: 8vw;
     }
 }
 
