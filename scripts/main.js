@@ -1,21 +1,11 @@
-$('#arrowID').scroll(function (event) {
-    alert('Stop');
-    if ($(window).scrollTop() > 100) {
-        $('#arrowID').hide();
-    }
-    else {
-        $('#arrowID').hide();
-    }
-});
-
 /* Shapes */
-var svgContainer = document.getElementById('bm');
+/*var svgContainer = document.getElementById('bm');
 var animItem = bodymovin.loadAnimation({
   wrapper: svgContainer,
   animType: 'svg',
   loop: true,
   path: 'data.json'
-});
+});*/
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -70,6 +60,7 @@ const navSlide = () => {
         ToggleMenu();
     });
 
+    
     nav.addEventListener("click", function(e) {
         if (window.matchMedia('(max-width: 767px)').matches && menuOpen) {
             ToggleMenu();
