@@ -207,7 +207,7 @@ a {
 
 .arrow {
     position: absolute;
-    bottom: 25vh;
+    bottom: 28vh;
     left: 50%;
     margin-left: -21px;
     border: solid black;
@@ -240,19 +240,19 @@ a {
     transition: all 0.3s ease;
 }
 
-.title {
+p, h1, h2, h3, h4, h5  {
+    color: rgb(226, 226, 226);
+    font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+
+.title {
     margin-top: 30vh;
     font-size: 150px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
 }
 
 .under-title {
-    text-align: center;
     font-size: 100px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
     margin: 0px 0px 20px 20px;
 }
 
@@ -260,19 +260,8 @@ h3.under-title {
     font-size: 64px;
 }
 
-.disclaimer {
-    margin-top: -25px;
-    text-align: center;
-    font-size: 1px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-}
-
 .about-text {
-    text-align: center;
     font-size: 36px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
     margin: 40px 40px 40px 40px;
 }
 
@@ -282,10 +271,7 @@ h3.under-title {
 }
 
 .contact-text {
-    text-align: center;
     font-size: 36px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
     margin-bottom: 50px;
 }
 
@@ -325,11 +311,8 @@ h3.under-title {
     filter: drop-shadow(0px 0px 0px black)
 }
 
-.grid-container>a:hover {
-    filter: drop-shadow(0px 0px 30px black);
-}
-
 .grid-container>a:hover div {
+    -webkit-filter: brightness(0.4);
     filter: brightness(0.4);
 }
 
@@ -348,12 +331,8 @@ h3.under-title {
 }
 
 .game-title {
-    color: rgb(226, 226, 226);
-    text-align: center;
     margin-top: 12vw;
     font-size: 8vw;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
     opacity: 0;
     transition: opacity .7s;
 }
@@ -385,25 +364,16 @@ h3.under-title {
 
 @keyframes arrowAnimation {
     0% {
-        bottom: 25vh;
+        transform: translateY(0%) rotate(45deg);
+        -webkit-transform: translateY(0%) rotate(45deg);
     }
     50% {
-        bottom: 27vh;
+        transform: translateY(70%) rotate(45deg);
+        -webkit-transform: translateY(70%) rotate(45deg);
     }
     100% {
-        bottom: 25vh;
-    }
-}
-
-@keyframes arrowAnimationWide {
-    0% {
-        bottom: 30vh;
-    }
-    50% {
-        bottom: 32vh;
-    }
-    100% {
-        bottom: 30vh;
+        transform: translateY(0%) rotate(45deg);
+        -webkit-transform: translateY(0%) rotate(45deg);
     }
 }
 
@@ -421,6 +391,10 @@ h3.under-title {
         margin-top: 24vw;
         font-size: 16vw;
     }
+
+    .arrow {
+        bottom: 35vh;
+    }
 }
 
 /* Super wide and super narrow */
@@ -435,6 +409,10 @@ h3.under-title {
 
     h3.under-title {
         font-size: 50px;
+    }
+
+    .arrow {
+        bottom: 40vh;
     }
 
     .grid-container {
@@ -452,7 +430,7 @@ h3.under-title {
 
 @media screen and (max-height: 564px) {
     .title {
-        margin-top: 25vh;
+        margin-top: 20vh;
         font-size: 100px;
     }
 
