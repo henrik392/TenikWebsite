@@ -240,7 +240,7 @@ a {
     transition: all 0.3s ease;
 }
 
-p, h1, h2, h3, h4, h5  {
+p, h1, h2, h3, h4, h5, li  {
     color: rgb(226, 226, 226);
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -381,6 +381,45 @@ h3.under-title {
 .garbageDisk {
     margin: 100px;
 }
+
+
+/* policy */
+
+#policy-title {
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.policy-text {
+    margin: 5vh 10vw;
+}
+
+.policy-text * {
+    margin: 20px;
+    font-size: 24px;
+}
+
+.policy-text h2 {
+    font-size: 40px;
+}
+
+.policy-text h3 {
+    font-size: 36px;
+}
+
+.policy-text h4 {
+    font-size: 30px;
+}
+
+.policy-text h4 {
+    font-size: 28px;
+}
+
+.policy-text a {
+    color: white;
+    text-decoration: underline;
+}
+
 
 /*animations*/
 
