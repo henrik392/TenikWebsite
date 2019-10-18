@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tenik || V3</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <script>
 (function(a){if(a)a.events={DOMNodeInserted:function(b){var b=b.target,c=b.nodeName;b.nodeType==1&&(/link/i.test(c)?a.link(b):/style/i.test(c)?a.styleElement(b):b.hasAttribute("style")&&a.styleAttribute(b))},DOMAttrModified:function(b){b.attrName==="style"&&(document.removeEventListener("DOMAttrModified",a.events.DOMAttrModified,false),a.styleAttribute(b.target),document.addEventListener("DOMAttrModified",a.events.DOMAttrModified,false))}},document.addEventListener("DOMContentLoaded",function(){document.addEventListener("DOMNodeInserted",
 a.events.DOMNodeInserted,false);document.addEventListener("DOMAttrModified",a.events.DOMAttrModified,false)},false)})(window.StyleFix);
@@ -45,34 +45,14 @@ a.events.DOMNodeInserted,false);document.addEventListener("DOMAttrModified",a.ev
         </nav>
     </header>
     <main>
-        <div class="parallax-div">
-            <div class="parallax1 parallax pixel-art"></div>
-            <h1 class="title">Tenik</h1>
-            <a href="#about">
-                <div id="arrowID">
-                    <div class="arrow down arrow1"></div>
-                    <div class="arrow down arrow2"></div>
-                </div>
-            </a>
-        </div>
 
-        <h2 class="under-title" id="about">About</h2>
-        <h3 class="under-title">Games of the Future</h3>
+        <img src="../images/CaveBoatLogo.png" alt="Cave boat logo" class="pixel-art app-icon"></img>
+        
+        <h2 class="under-title">Cave Boat</h2>
+        <h3 class="under-title">Stear through the rocks</h3>
+        
 
         <div class="under-line"></div>
-
-        <p class="about-text">Tenik is a indie game company that primarily focuses on mobile games. We have realesed titles like Cave Boat and Garbage Disk. We are also moving into other fields in tech like websites. This website is a creation of Tenik.</p>
-        
-        <div class="grid-container" id="games">
-            <a href="#">
-                <div class="garbage-disk-image pixel-art"></div>
-                <h2 class="game-title" id="game-itle">Garbage Disk</h2>
-            </a>
-            <a href="cave-boat/">
-                <div class="cave-boat-image pixel-art"></div>
-                <h2 class="game-title" id="game-itle">Cave<br>Boat</h2>
-            </a>
-        </div>
     </main>
     <footer>
         <h2 class="under-title" id="contact">Contact</h2>
@@ -82,7 +62,7 @@ a.events.DOMNodeInserted,false);document.addEventListener("DOMAttrModified",a.ev
     </footer>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"> </script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/main.js"> </script> 
+    <script src="../scripts/main.js"> </script> 
 </body>
 
 </html>

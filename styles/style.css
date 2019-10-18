@@ -330,6 +330,16 @@ h3.under-title {
     background-image: url("../images/CaveBoatLogo.png");
 }
 
+.app-icon {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 20vw;
+}
+
 .game-title {
     margin-top: 12vw;
     font-size: 8vw;
