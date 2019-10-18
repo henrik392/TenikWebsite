@@ -63,7 +63,7 @@ a {
     color: rgb(226, 226, 226);
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .nav-links a::after {
@@ -270,6 +270,8 @@ h3.under-title {
     margin-bottom: 30px;
 }
 
+
+
 .contact-text {
     font-size: 36px;
     margin-bottom: 50px;
@@ -292,7 +294,6 @@ h3.under-title {
     border-style: solid;
     border-width: 10px;
     border-color: #191919;
-
     position: absolute;
 
     top: 0;
@@ -320,7 +321,6 @@ h3.under-title {
     opacity: 1;
 }
 
-
 .garbage-disk-image {
     background: url('../images/GarbageDiskLogoAnimated.gif');
     transform: scale(1);
@@ -329,15 +329,22 @@ h3.under-title {
 .cave-boat-image {
     background-image: url("../images/CaveBoatLogo.png");
 }
+.game-title {
+    opacity: 0;
+    transition: opacity .7s;
+}
+
+
+/*game pages*/
 
 .app-icon {
-    margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-top: 10px;
+    margin-bottom: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    border-radius: 20vw;
+    width: 700px;
+    border-radius: 15%;
 }
 
 .game-title {
@@ -347,6 +354,33 @@ h3.under-title {
     transition: opacity .7s;
 }
 
+.about-text#about-game {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 400px;
+}
+
+.icon-title {
+    margin-top: 10px;
+    font-size: 150px;
+}
+
+.download-app {
+    margin: auto;
+    text-align: center;
+}
+
+.download-app svg {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: inline-block;
+    max-width:748px;
+    width: 35vw;
+}
+
+.garbageDisk {
+    margin: 100px;
+}
 
 /*animations*/
 
@@ -387,6 +421,25 @@ h3.under-title {
     }
 }
 
+@media screen and (max-width:1024px) {
+    .icon-title {
+        font-size: 120px;
+    }
+    .app-icon {
+        width: 60vw;
+    }
+    .download-app svg {
+        display: block;
+        margin: 40px auto;
+        width: 60vw;
+    }
+    .about-text#about-game {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 400px;
+    }
+}
+
 @media screen and (max-width:768px) {
 
     .grid-container>a {
@@ -404,6 +457,13 @@ h3.under-title {
 
     .arrow {
         bottom: 35vh;
+    }
+
+    .icon-title {
+        font-size: 90px;
+    }
+    .app-icon {
+        width: 60vw;
     }
 }
 
@@ -435,6 +495,13 @@ h3.under-title {
 
     .contact-text {
         font-size: 8vw;
+    }
+
+    .icon-title {
+        font-size: 80px;
+    }
+    .app-icon {
+        width: 70vw;
     }
 }
 

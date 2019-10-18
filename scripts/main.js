@@ -1,12 +1,3 @@
-/* Shapes */
-/*var svgContainer = document.getElementById('bm');
-var animItem = bodymovin.loadAnimation({
-  wrapper: svgContainer,
-  animType: 'svg',
-  loop: true,
-  path: 'data.json'
-});*/
-
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
