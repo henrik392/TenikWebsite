@@ -262,7 +262,7 @@ h3.under-title {
 
 .about-text {
     font-size: 36px;
-    margin: 40px 40px 40px 40px;
+    margin: 40px 80px;
 }
 
 #contact {
@@ -355,14 +355,14 @@ h3.under-title {
 }
 
 .about-text#about-game {
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 400px;
+    margin-bottom: 15vw;
 }
 
 .icon-title {
-    margin-top: 10px;
-    font-size: 150px;
+    margin: 50px 30px 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 120px;
 }
 
 .download-app {
@@ -472,10 +472,8 @@ h3.under-title {
         margin: 40px auto;
         width: 60vw;
     }
-    .about-text#about-game {
-        margin-left: 80px;
-        margin-right: 80px;
-        margin-bottom: 400px;
+    .icon-title {
+        font-size: 100px;
     }
 }
 
@@ -503,6 +501,9 @@ h3.under-title {
     }
     .app-icon {
         width: 60vw;
+    }
+    .about-text {
+        margin: 30px 60px;
     }
 }
 
